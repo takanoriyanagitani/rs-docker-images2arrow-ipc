@@ -3,6 +3,18 @@ name = "rs-docker-images2arrow-ipc"
 version = "0.1.0"
 edition = "2024"
 
+description = "Prints the images info as an ipc stream"
+license = "Apache-2.0"
+repository = "https://github.com/takanoriyanagitani/rs-docker-images2arrow-ipc"
+homepage = "https://github.com/takanoriyanagitani/rs-docker-images2arrow-ipc"
+documentation = "https://docs.rs/rs-docker-images2arrow-ipc/latest"
+keywords = ["docker", "image", "arrow", "ipc", "stream"]
+categories = ["command-line-utilities"]
+
+exclude = [
+	"rs-docker-images2arrow-ipc",
+]
+
 [lints.rust]
 unsafe_code = "forbid"
 
