@@ -1,0 +1,38 @@
+[package]
+name = "rs-docker-images2arrow-ipc"
+version = "0.1.0"
+edition = "2024"
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+unwrap_used = "deny"
+expect_used = "deny"
+
+[dependencies.bollard]
+version = "0"
+default-features = false
+features = [
+	"http",
+	"pipe",
+]
+
+[dependencies.clap]
+version = "4"
+features = ["derive"]
+
+[dependencies.arrow]
+version = "57"
+default-features = false
+features = [
+	"ipc",
+]
+
+[dependencies.tokio]
+version = "1"
+default-features = false
+features = [
+	"macros",
+	"rt-multi-thread",
+]
